@@ -1,0 +1,28 @@
+{
+  "name": "sponsorops",
+  "version": "1.0.0",
+  "description": "Agentic Slack assistant that researches prospects, drafts outreach, and tracks the pipeline with human-in-the-loop approval.",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/src/index.js",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "cli": "tsx src/cli.ts",
+    "smoke": "tsx scripts/smoke.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "@slack/bolt": "^5.1.0",
+    "@slack/types": "^3.2.0",
+    "dotenv": "^18.0.8",
+    "node-cron": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
